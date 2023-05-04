@@ -32,8 +32,9 @@ On the website, we can customize the sampling time and send it to rasp for chang
 **Compile:
 + PC: ``` gcc sub3.c $(mariadb_config --libs) -o sub3 $(mariadb_config --cflags) -lpaho-mqtt3c -lm ```
 + Raspberry: ``` gcc rasp2.c $(mariadb_config --libs) -o rasp2 $(mariadb_config --cflags) -lpaho-mqtt3c -lwiringPi -lm ```
-#Feedback
+# Feedback
 If you have any contribution to improve the project, please contact me by email: quynh.nm1808@gmail.com
 
 I will acknowledge and edit to make the project more complete.
+
 Thanks!
