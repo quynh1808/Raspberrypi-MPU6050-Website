@@ -1,0 +1,33 @@
+$
+/// Mysql for PC
+
+server = "localhost";
+$user = "admin"; 
+$pass = "123456";
+$dbname = "IoT_Exam";
+/// chung cho moi file
+
+
+// set mysql
+database: IoT_Exam
+
+
+/////////////CHO PHAAN NHIET DO////////////////////////////////////////////////////////////////////
+// table cho thoi gian lay mau
++ CREATE TABLE tempsample(id int not null,data int not null);
+-> INSERT INTO tempsample VALUES (1,10);   ///tao gia tri ban dau
+
+
+
++ CREATE TABLE temptable(time TIMESTAMP NOT NULL, temp float(5,1) NOT NULL);
+
+/////////////CHO PHAN XYZ///////////////////////////////////////////////////////////////////
+
+
+// table xyz nhan gia tri gui ve tu raspberry..
++ CREATE TABLE xyz(x float(4,2) NOT NULL,y float(4,2) NOT NULL, z float(4,2) NOT NULL);
+
+//table ang nhan gia tri cac goc nghieng
++ CREATE TABLE angle(id int primary key auto_increment not null, pitch float(5,2) NOT NULL,roll float(5,2) NOT NULL, yaw float(5,2) NOT NULL);
+
+

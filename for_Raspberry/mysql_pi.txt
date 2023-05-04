@@ -1,0 +1,15 @@
+/// mysql for Raspberry pi
+
+//mysql concept:
+
+char *server = "localhost";
+char *user = "admin";
+char *password = "123456"; // set me first 
+char *database = "mqtt";
+
+
+//database: mqtt
+
+
++ CREATE TABLE sensor3(id int NOT NULL, data int NOT NULL);
++ INSERT INTO sensor3(id,data) VALUES(1,5);  ///tao gia tri ban dau
