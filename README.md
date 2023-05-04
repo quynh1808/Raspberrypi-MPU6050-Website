@@ -13,7 +13,7 @@ RaspberryPi acts as Slave, it reads temperature and accelerometer signals and th
 
 On the website, we can customize the sampling time and send it to rasp for change.
 # Pins Configuration
-    
+
     + Connect to MPU6050:
         - VCC   3.3V        1 Physical
         - GND   0v          6
@@ -21,4 +21,5 @@ On the website, we can customize the sampling time and send it to rasp for chang
         - SCL               5
         - INT               7
 # Install/Compile/Run
-1. Install Apache2: 
+1. Install Apache2:
+    sudo apt-get install apache2 -y
