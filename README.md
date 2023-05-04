@@ -12,6 +12,8 @@ With this project, the PC acts as a server with the website displaying the tempe
 RaspberryPi acts as Slave, it reads temperature and accelerometer signals and then sends the value back to PC via MQTT communication protocol.
 
 On the website, we can customize the sampling time and send it to rasp for change.
+
+More Details: https://drive.google.com/file/d/1RsuSEeQWmR5zi1XpNKSqcQ__YWDW6Q3j/view?usp=sharing
 # Pins Configuration
 
     + Connect to MPU6050:
