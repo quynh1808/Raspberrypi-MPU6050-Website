@@ -7,6 +7,8 @@ The software for this project consists of 3 folder:
 * for_Raspberry: This is the folder containing the rasp2.c file and the mysql note file. In rasp.2 file I write to read temperature and acceleration values from MPU6050 with delay t seconds. The t value is changed by the Website from the PC.
 * Images: Some illustrations
 # Describe:: 
+* MPU6050 (I2C Digital-Output) is a three-axis accelerometer and three-axis gyroscope Micro Electro-mechanical system (MEMS). It aids in the measurement of velocity, orientation, acceleration, displacement, and other motion-related features.
+
 With this project, the PC acts as a server with the website displaying the temperature values in the form of a graph and the pitch, roll, yaw acceleration values.
 
 RaspberryPi acts as Slave, it reads temperature and accelerometer signals and then sends the value back to PC via MQTT communication protocol.
