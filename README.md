@@ -21,5 +21,19 @@ On the website, we can customize the sampling time and send it to rasp for chang
         - SCL               5
         - INT               7
 # Install/Compile/Run
-1. Install Apache2
-    sudo apt-get install apache2 -y
+**Note: Only use for linux operating system.
+1. Install Apache2: ```sudo apt-get install apache2 -y ```
+2. Install Mysql: ```sudo apt-get install mariadb-server mariadb-client ```
+3. Install C library for MySQL: ```sudo apt-get install libmariadbc-dev ```
+4. Install PHP MYSQL: ```sudo apt-get install php php-mysql```
+5. Dowload MQTT: [ECLIPSE](https://www.eclipse.org/paho/index.php?page=clients/c/index.php)
+6. Install WiringPi lib(Only RaspberryPi): ```sudo apt-get install wiringpi ``` 
+
+**Compile:
++ PC: ``` gcc sub3.c $(mariadb_config --libs) -o sub3 $(mariadb_config --cflags) -lpaho-mqtt3c -lm ```
++ Raspberry: gcc rasp2.c $(mariadb_config --libs) -o rasp2 $(mariadb_config --cflags) -lpaho-mqtt3c -lwiringPi -lm
+#Feedback
+If you have any contribution to improve the project, please contact me by email: quynh.nm1808@gmail.com
+
+I will acknowledge and edit to make the project more complete.
+Thanks!
